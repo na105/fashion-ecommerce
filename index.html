@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASHION - Discover Our World</title>
+
+    
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/logo.png">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+
+        <div class="alert">
+            <div class="container">
+                <p class="alert-text">Use the code AAFIRST10 promo code to get 10% extra discount on everything</p>
+            </div>
+        </div>
+
+        <div class="header-top" data-header>
+            <div class="container">
+
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="input-wrapper">
+                    <input type="search" name="search" placeholder="Search product" class="search-field">
+
+                    <button class="search-submit" aria-label="search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" width="179" height="26" alt="">
+                </a>
+
+                <div class="header-actions">
+
+                    <button class="header-action-btn" aria-label="user">
+                        <ion-icon name="person-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <button class="header-action-btn" aria-label="favourite item">
+                        <ion-icon name="heart-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+                        <span class="btn-badge">0</span>
+                    </button>
+
+                    <button class="header-action-btn" aria-label="cart item">
+                        <data class="btn-text" value="0">AED 0.00</data>
+
+                        <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+                        <span class="btn-badge">0</span>
+                    </button>
+
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link has-after">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link has-after">Brands</a>
+                            <div class="select-box">
+                                <div class="search-content">
+                                    <div class="search">
+                                        <input type="text" id="optionSearch" placeholder="Search.." name="">
+                                    </div>
+                                    <ul class="drop-menu">
+                                        <li>Adidas</li>
+                                        <li>Alexander McQueen</li>
+                                        <li>Armani</li>
+                                        <li>BENCIVENGA</li>
+                                        <li>Burberry</li>
+                                        <li>Calvin Klein</li>
+                                        <li>Chopard</li>
+                                        <li>Diesel</li>
+                                        <li>Dolce & Gabbana</li>
+                                        <li>Fendi</li>
+                                        <li>Fila</li>
+                                        <li>Gucci</li>
+                                        <li>Givenchy</li>
+                                        <li>Hugo Boss</li>
+                                        <li>Jimmy Choo</li>
+                                        <li>Karl Lagerfeld</li>
+                                        <li>MArc Jacobs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link has-after">Shop</a>
+                            <div class="mega-box">
+                                <div class="content">
+                                    <div class="row">
+                                        <header>Women</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Handbags</a></li>
+                                            <li><a href="#">Sports</a></li>
+                                            <li><a href="#">Beauty</a></li>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Sale</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Men</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Clothing</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Bags</a></li>
+                                            <li><a href="#">Sports</a></li>
+                                            <li><a href="#">Grooming</a></li>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Sale</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Kids</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Baby</a></li>
+                                            <li><a href="#">Toddler</a></li>
+                                            <li><a href="#">Boys</a></li>
+                                            <li><a href="#">Girls</a></li>
+                                            <li><a href="#">Toys</a></li>
+                                            <li><a href="#">Sale</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Furniture</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Furniture Packages</a></li>
+                                            <li><a href="#">Beds</a></li>
+                                            <li><a href="#">Sofas</a></li>
+                                            <li><a href="#">Dining Tables</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <header>Electronics</header>
+                                        <ul class="mega-links">
+                                            <li><a href="#">Electronics</a></li>
+                                            <li><a href="#">Mobiles</a></li>
+                                            <li><a href="#">Laptops</a></li>
+                                            <li><a href="#">Televisions</a></li>
+                                            <li><a href="#">Headsets</a></li>
+                                            <li><a href="#">PC Acessories</a></li>
+                                            <li><a href="#">Cameras</a></li>
+                                            <li><a href="#">Printers</a></li>
+                                            <li><a href="#">Tablets</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#offer" class="navbar-link has-after">Offer</a>
+                        </li>
+
+                        <li>
+                            <a href="#blog" class="navbar-link has-after">Blog</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+
+            <div class="wrapper">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" width="179" height="26" alt="">
+                </a>
+
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="navbar-list">
+
+                <li>
+                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                </li>
+
+                <li>
+                    <a href="#collection" class="navbar-link" data-nav-link>Collection</a>
+                </li>
+
+                <li>
+                    <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+                </li>
+
+                <li>
+                    <a href="#offer" class="navbar-link" data-nav-link>Offer</a>
+                </li>
+
+                <li>
+                    <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero" id="home" aria-label="hero" data-section>
+                <div class="container">
+
+                    <ul class="has-scrollbar">
+
+                        <li class="scrollbar-item">
+                            <div class="hero-card has-bg-image"
+                                style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                                <div class="card-content">
+
+                                    <h1 class="h1 hero-title">
+                                        Make Everyday <br>
+                                        a Runway
+                                    </h1>
+
+                                    <p class="hero-text">
+                                        Explore our endless variety of brands to get what you desire and in style.
+                                    </p>
+
+
+                                    <a href="#" class="btn btn-primary">Shop Now</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="hero-card has-bg-image"
+                                style="background-image: url('./assets/images/hero-banner-2.jpg')">
+
+                                <div class="card-content">
+
+                                    <h1 class="h1 hero-title">
+                                        Furniture your Home <br>
+                                        Furniture your Life
+                                    </h1>
+
+                                    <p class="hero-text">
+                                        Embrace the harmony of form and function. Explore our range and discover the
+                                        furniture that will become your sanctury of relaxation.
+                                    </p>
+
+                                    <a href="#" class="btn btn-primary">Shop Now</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="hero-card has-bg-image"
+                                style="background-image: url('./assets/images/hero-banner-3.jpg')">
+
+                                <div class="card-content">
+
+                                    <h1 class="h1 hero-title">
+                                        Electronics Make <br>
+                                        Everything Better
+                                    </h1>
+
+                                    <p class="hero-text">
+                                        Discover the technology available to make your life easier.
+                                    </p>
+
+                                    <a href="#" class="btn btn-primary">Shop Now</a>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #COLLECTION
+      -->
+
+            <section class="section collection" id="collection" aria-label="collection" data-section>
+                <div class="container">
+
+                    <ul class="collection-list">
+
+                        <li>
+                            <div class="collection-card has-before hover:shine">
+
+                                <h2 class="h2 card-title">Summer Collection</h2>
+
+                                <p class="card-text">Get the latest trending collection</p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Shop Now</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+
+                                <div class="has-bg-image"
+                                    style="background-image: url('./assets/images/collection-1.jpg')"></div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collection-card has-before hover:shine">
+
+                                <h2 class="h2 card-title">What’s New?</h2>
+
+                                <p class="card-text">Get the latest</p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Discover Now</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+
+                                <div class="has-bg-image"
+                                    style="background-image: url('./assets/images/collection-2.jpg')"></div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collection-card has-before hover:shine">
+
+                                <h2 class="h2 card-title">Latest Offers</h2>
+
+                                <p class="card-text">Keep calm, summer sales are here!</p>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">Discover Now</span>
+
+                                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                                </a>
+
+                                <div class="has-bg-image"
+                                    style="background-image: url('./assets/images/collection-3.jpg')"></div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <!-- 
+        - #BANNER
+      -->
+
+            <section class="section banner" aria-label="banner" data-section>
+                <div class="container">
+
+                    <ul class="banner-list">
+
+                        <li>
+                            <div class="banner-card banner-card-1 has-before hover:shine">
+
+                                <p class="card-subtitle">New Collection</p>
+
+                                <h2 class="h2 card-title">Discover Our <br> Latest Skincare <br> Collection</h2>
+
+                                <a href="#" class="btn btn-secondary">Explore More</a>
+
+                                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')">
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="banner-card banner-card-2 has-before hover:shine">
+
+                                <h2 class="h2 card-title">15% off Everything</h2>
+
+                                <p class="section-text">
+                                    Sign Up and get 15% on your first order.
+                                </p>
+
+                                <br><br>
+
+                                <a href="#" class="btn btn-secondary">Sign Up</a>
+
+                                <div class="has-bg-image" style="background-image: url('./assets/images/banner-2.jpg')">
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+        <!-- #SHOP -->
+
+            <div class="product-container">
+                <div class="product">
+                    <div class="product-card">
+                        <h2 class="name">Leather Jacket</h2>
+                        <span class="price">AED 330.00</span>
+                        <a class="popup-btn">Quick View</a>
+                        <img src="./assets/images/product-01.png" class="product-img" alt="">
+                    </div>
+                    <div class="popup-view">
+                        <div class="popup-card">
+                            <a><i class="fa fa-times close-btn"></i></a>
+                            <div class="product-img">
+                                <img src="./assets/images/product-01.png" alt="">
+                                <div>
+                                    <div class="info">
+                                        <h2>Leather Jacket <br><br> <span> Women's Clothing</span></h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam facere soluta sint rerum tempora, molestias veniam repellat officiis fugiat consequuntur itaque odio ducimus! Ratione architecto amet eveniet, voluptate in fuga?</p>
+                                        <span class="price">AED 330.00</span>
+                                        <a href="#" class="add-cart-btn">Add to Cart</a>
+                                        <a href="#" class="add-wish">Add to Wishlist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product-card">
+                        <h2 class="name">Jersey Jacket</h2>
+                        <span class="price">AED 430.00</span>
+                        <a class="popup-btn">Quick View</a>
+                        <img src="./assets/images/product-08.png" class="product-img" alt="">
+                    </div>
+                    <div class="popup-view">
+                        <div class="popup-card">
+                            <a><i class="fa fa-times close-btn"></i></a>
+                            <div class="product-img">
+                                <img src="./assets/images/product-08-2.png" alt="">
+                                <div>
+                                    <div class="info">
+                                        <h2>Jersey Jacket <br><br> <span> Men's Clothing</span></h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam facere soluta sint rerum
+                                            tempora, molestias veniam repellat officiis fugiat consequuntur itaque odio ducimus! Ratione
+                                            architecto amet eveniet, voluptate in fuga?</p>
+                                        <span class="price">AED 330.00</span>
+                                        <a href="#" class="add-cart-btn">Add to Cart</a>
+                                        <a href="#" class="add-wish">Add to Wishlist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product-card">
+                        <h2 class="name">Sunglasses</h2>
+                        <span class="price">AED 180.00</span>
+                        <a class="popup-btn">Quick View</a>
+                        <img src="./assets/images/product-07.png" width="300px" class="product-img" alt="">
+                    </div>
+                    <div class="popup-view">
+                        <div class="popup-card">
+                            <a><i class="fa fa-times close-btn"></i></a>
+                            <div class="product-img">
+                                <img src="./assets/images/product-07-2.png" alt="">
+                                <div>
+                                    <div class="info">
+                                        <h2>Sunglasses <br><br> <span> Women's Acessories</span></h2>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam facere soluta sint rerum
+                                            tempora, molestias veniam repellat officiis fugiat consequuntur itaque odio ducimus! Ratione
+                                            architecto amet eveniet, voluptate in fuga?</p>
+                                        <span class="price">AED 330.00</span>
+                                        <a href="#" class="add-cart-btn">Add to Cart</a>
+                                        <a href="#" class="add-wish">Add to Wishlist</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- 
+        - #FEATURE
+      -->
+
+            <section class="section feature" aria-label="feature" data-section>
+                <div class="container">
+
+                    <h2 class="h2-large section-title">Why Shop with FASHION?</h2>
+
+                    <ul class="flex-list">
+
+                        <li class="flex-item">
+                            <div class="feature-card">
+
+                                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy"
+                                    alt="Exclusive Items" class="card-icon">
+
+                                <h3 class="h3 card-title">Exclusive Items</h3>
+
+                            </div>
+                        </li>
+
+                        <li class="flex-item">
+                            <div class="feature-card">
+
+                                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
+                                    alt="Secure Payment" class="card-icon">
+
+                                <h3 class="h3 card-title">Secure Payment</h3>
+
+                            </div>
+                        </li>
+
+                        <li class="flex-item">
+                            <div class="feature-card">
+
+                                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
+                                    alt="Authentic 100%" class="card-icon">
+
+                                <h3 class="h3 card-title">Authentic 100%</h3>
+
+                            </div>
+                        </li>
+
+                        <li class="flex-item">
+                            <div class="feature-card">
+
+                                <img src="./assets/images/feature-4.jpg" width="204" height="236" loading="lazy"
+                                    alt="Favorite Brands" class="card-icon">
+
+                                <h3 class="h3 card-title">Favorite Brands</h3>
+
+                            </div>
+                        </li>
+
+                        <li class="flex-item">
+                            <div class="feature-card">
+
+                                <img src="./assets/images/feature-5.jpg" width="204" height="236" loading="lazy"
+                                    alt="Easy Return" class="card-icon">
+
+                                <h3 class="h3 card-title">Easy Return</h3>
+
+                            </div>
+                        </li>
+
+                        <li class="flex-item">
+                            <div class="feature-card">
+
+                                <img src="./assets/images/feature-6.jpg" width="204" height="236" loading="lazy"
+                                    alt="Fast Shipping" class="card-icon">
+
+                                <h3 class="h3 card-title">Fast Shipping</h3>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #OFFER
+      -->
+
+            <section class="section offer" id="offer" aria-label="offer" data-section>
+                <div class="container">
+
+                    <figure class="offer-banner">
+                        <img src="./assets/images/offer-banner-1.jpg" width="305" height="408" loading="lazy"
+                            alt="offer products" class="w-100">
+
+                        <img src="./assets/images/offer-banner-2.jpg" width="450" height="625" loading="lazy"
+                            alt="offer products" class="w-100">
+                    </figure>
+
+                    <div class="offer-content">
+
+                        <p class="offer-subtitle">
+                            <span class="span">Special Offer</span>
+
+                        </p>
+
+                        <h2 class="h2-large section-title">Up To 70% Sale On Everything</h2>
+
+                        <p class="section-text">
+                            Don't mess out the fun and quickly use this offer before the time runs out!.
+                        </p>
+
+                        <div class="countdown" id="del-countdown">
+                            <div id="clock"></div>
+                            <div id="units">
+                                <span class="time" aria-label="days">Days</span>
+                                <span class="time" aria-label="hours">Hours</span>
+                                <span class="time" aria-label="minutes">Minutes</span>
+                                <span class="time" aria-label="seconds">Seconds</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #BLOG
+      -->
+
+            <section class="section blog" id="blog" aria-label="blog" data-section>
+                <div class="container">
+
+                    <h2 class="h2-large section-title">More to Discover</h2>
+
+                    <ul class="flex-list">
+
+                        <li class="flex-item">
+                            <div class="blog-card">
+
+                                <figure class="card-banner img-holder has-before hover:shine"
+                                    style="--width: 700; --height: 450;">
+                                    <img src="./assets/images/blog-1.jpg" width="700" height="450" loading="lazy"
+                                        alt="Contact Us" class="img-cover">
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Contact Us</a>
+                                </h3>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">See More</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="flex-item">
+                            <div class="blog-card">
+
+                                <figure class="card-banner img-holder has-before hover:shine"
+                                    style="--width: 700; --height: 450;">
+                                    <img src="./assets/images/blog-2.jpg" width="700" height="450" loading="lazy"
+                                        alt="From Our Blog" class="img-cover">
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">From Our Blog</a>
+                                </h3>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">See More</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="flex-item">
+                            <div class="blog-card">
+
+                                <figure class="card-banner img-holder has-before hover:shine"
+                                    style="--width: 700; --height: 450;">
+                                    <img src="./assets/images/blog-3.jpg" width="700" height="450" loading="lazy"
+                                        alt="Our Story" class="img-cover">
+                                </figure>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Our Story</a>
+                                </h3>
+
+                                <a href="#" class="btn-link">
+                                    <span class="span">See More</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" data-section>
+        <div class="container">
+
+            <div class="footer-top">
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Company</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About US</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Our Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Become Our Partner</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Customer Support</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Affiliate Program</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Policies</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Refund Form</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Shipping Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Refund Policy</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer-list">
+
+                    <p class="newsletter-title">Good emails.</p>
+
+                    <p class="newsletter-text">
+                        Enter your email below to be the first to know about new collections and product launches.
+                    </p>
+
+                    <form action="" class="newsletter-form">
+                        <input type="email" name="email_address" placeholder="Enter your email address" required
+                            class="email-field">
+
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="wrapper">
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-tiktok"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="">
+                </a>
+
+                <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method"
+                    class="w-100">
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="text/javascript" >
+        var popupViews = document.querySelectorAll('.popup-view');
+        var popupBtns = document.querySelectorAll('.popup-btn');
+        var closeBtns = document.querySelectorAll('.close-btn');
+
+        // javascript for quick view button
+        var popup = function(popupClick) {
+            popupViews[popupClick].classList.add('active');
+        }
+
+        popupBtns.forEach((popupBtn, i) => {
+            popupBtn.addEventListener("click", () => {
+                popup(i);
+            });
+        });
+
+        // javascript for close button
+        closeBtns.forEach((closeBtn, i) => {
+            closeBtn.addEventListener("click", () => {
+                popupViews.forEach((popupView) => {
+                    popupView.classList.remove('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
